@@ -1,0 +1,99 @@
+header {
+  position: relative;
+  background: white;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #af1313;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+a:hover {
+  background: #e72929;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header-title {
+  padding: 5px;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e72929;
+  align-items: center;
+}
+
+.header-title a {
+  color: #e72929;
+  text-decoration: none;
+}
+.header-title a:hover {
+  background: none;
+  color: #af1313;
+  cursor: pointer;
+}
+
+.container img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  background-color: red;
+  padding: 15px;
+}
+a.logo {
+  font-weight: bold;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  height: 100%;
+}
+
+ul a {
+  padding: 1rem;
+  display: inline-block;
+  height: 100%;
+}
+ul li {
+  align-self: center;
+}
+
+a span {
+  background: #ff4d4d;
+  color: white;
+  padding: 0.1rem 0.45rem;
+  border-radius: 100rem;
+  font-size: 0.9rem;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  background: whitesmoke;
+  display: none;
+}
+
+.menu-container:hover .menu {
+  display: block;
+}
+
+.menu a {
+  width: 100%;
+  min-width: 8rem;
+}

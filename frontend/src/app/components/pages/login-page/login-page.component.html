@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="details">
+    <!-- <app-title title=""></app-title> -->
+    <div class="title">LET'S START YOUR ORDER</div>
+    <hr />
+    <div class="form-container">
+      <img src="../../../../assets/logo.png" alt="Login" />
+      <form [formGroup]="loginForm" (ngSubmit)="submit()">
+        <text-input
+          [control]="fc.email"
+          [showErrorsWhen]="isSubmitted"
+          type="email"
+          label="Email"
+        >
+        </text-input>
+
+        <text-input
+          [control]="fc.password"
+          [showErrorsWhen]="isSubmitted"
+          type="password"
+          label="Password"
+        >
+        </text-input>
+
+        <default-button text="Login"></default-button>
+        <div class="register">
+          New user? &nbsp;
+          <a routerLink="/register" [queryParams]="{ returnUrl: returnUrl }">
+            Register here
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
